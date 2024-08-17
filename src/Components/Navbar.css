@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+body {
+    height: 100vh;
+    background-color: #161513;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 20px 150px;
+    /* width: 75vw;
+    margin: auto; */
+}
+
+.navbar-title {
+    display: none;
+}
+
+.navbar-ul {
+    display: flex;
+    gap: 60px;
+
+}
+
+.navbar-li {
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.12s;
+}
+
+.navbar-connect {
+    border: 1px solid purple;
+    padding: 10px 10px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25, #B923E1);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.navbar-connect:hover {
+    transform: scale(1.03);
+}
+
+.wesehe {
+    font-size: 26px;
+    border-bottom: 1px solid purple;
+    font-weight: bold;
+
+}
+
+.navbar-open {
+    display: none;
+}
+
+.navbar-close {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        margin: 1px 2px;
+        background-color: #161513;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        border: 2px solid;
+        /* Specify the border */
+        border-image: linear-gradient(270deg, #DA7C25 20%, #B923E1 80%) 1;
+        /* Gradient border */
+        box-sizing: border-box;
+        /* Ensures padding and border are included in the element's total width and height */
+    }
+
+
+
+
+    .navbar-connect {
+        display: none;
+    }
+
+    .navbar-open {
+        display: block;
+        position: absolute;
+        right: 30px;
+    }
+
+    .navbar-close {
+        display: block;
+        width: 33px;
+        position: relative;
+        margin-top: 3px;
+        margin: 15px auto;
+
+
+    }
+
+    .navbar-title {
+        color: white;
+        display: block;
+        margin-right: 39%;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .navbar-ul {
+        position: fixed;
+        flex-direction: column;
+        top: 4px;
+        text-align: center;
+        background-color: #36342f;
+        width: 250px;
+        height: 100%;
+        z-index: 2;
+        transform: right 0.5s;
+        right: -250px;
+        transition: all 0.5s;
+
+    }
+
+    .navbar-ul li {
+        top: 10px;
+        font-size: 20x;
+
+        /* flex-direction: row;
+        gap: 0px; */
+    }
+
+}

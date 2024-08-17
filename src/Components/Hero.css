@@ -1,0 +1,129 @@
+.hero {
+    /* border: 2px solid green; */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+.hero-image {
+    width: 215px;
+    /* border: 2px solid red; */
+    margin: 40px auto;
+    transition: all 0.2s;
+}
+
+.hero-heading {
+    font-size: 50px;
+    font-weight: bold;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.hero-heading p {
+    background: linear-gradient(270deg, #DA7C25 20%, #B923E1 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-paragraph {
+    /* border: 2px solid grey; */
+    margin-top: 15px;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.hero-connect {
+    margin-top: 25px;
+    /* border: 2px solid wheat; */
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    gap: 20px;
+
+}
+
+.hero-connect-one {
+    background: linear-gradient(270deg, #DA7C25 20%, #B923E1 80%);
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero-connect-two {
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.hero-connect-one:hover {
+    border: 1px solid white;
+}
+
+.hero-connect-two:hover {
+    border: 1px solid purple;
+}
+
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width:768px) {
+    .hero {
+        margin: 65px 12px;
+        /* border: 2px solid red; */
+    }
+
+    .hero-heading {
+        font-size: 30px;
+        width: 90%;
+        height: 16vh;
+    }
+
+    .hero-paragraph {
+        margin-top: 0px;
+        font-size: 20px;
+        width: 90%;
+        /* border: 2px solid green; */
+        height: 20vh;
+        text-align: center;
+    }
+
+    .hero-connect {
+        display: grid;
+        width: 70vw;
+        height: 13%;
+        grid-template-rows: 1fr 1fr;
+        /* border: 2px solid red; */
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero-connect-one{
+        padding:0px ;
+        text-align: center;
+        border-radius: 30px;
+        width: 175px;
+        height: 30px;
+        margin-bottom: 0px;
+        
+    }
+
+    .hero-connect-two {
+        margin-top: 0px;
+        padding: 0px;
+        height: 30px;
+
+
+    }
+
+}
